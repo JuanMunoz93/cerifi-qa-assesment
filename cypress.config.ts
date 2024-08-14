@@ -8,6 +8,7 @@ export default defineConfig({
   viewportHeight: 1080,
   e2e: {
     baseUrl: process.env.BASE_URL,
+    video: true,
     setupNodeEvents(on, config) {
       on("task", {
         logTestData(logMessage) {

@@ -5,8 +5,7 @@ import { CheckoutInfoPage } from "../pages/checkout/checkoutInfo.po";
 import { CheckoutOverviewPage } from "../pages/checkout/checkoutOverview.po";
 import { HomePage } from "../pages/home/home.po";
 import { LoginPage } from "../pages/login/login.po";
-import { ArticleInfo, UserInfo } from "../types/business.type";
-import { faker } from "@faker-js/faker";
+import { generateUserData, getTestData } from "../support/testDataHandler";
 
 describe("purchase flow", () => {
   it("purchase one item", () => {
@@ -43,20 +42,3 @@ describe("purchase flow", () => {
     checkoutCompletePage.verifyPurchaseIsComplete();
   });
 });
-
-//this will be an automatic process, i.e. db queries
-function getTestData(): ArticleInfo {
-  return {
-    id: "4",
-    name: "Sauce Labs Backpack",
-    price: "$29.99",
-  };
-}
-
-function generateUserData(): UserInfo {
-  return {
-    firstName: faker.person.firstName(),
-    lastName: faker.person.lastName(),
-    postalCode: faker.location.zipCode(),
-  };
-}
