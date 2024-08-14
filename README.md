@@ -16,21 +16,26 @@ We would like you to write end-to-end (E2E) tests for the SauceDemo application 
 ## Instructions
 
 1. **Fork and Clone**:
+
    - Fork this repository to your GitHub account.
    - Clone the forked repository to your local machine.
 
 2. **Create a Branch**:
+
    - Create a new branch named `firstName-lastName` (e.g., `john-doe`).
 
 3. **Write Your Scripts**:
+
    - Write your Cypress test scripts in the `cypress/e2e` folder.
    - Design and implement a framework that you believe is appropriate for the project.
 
 4. **Documentation**:
+
    - Provide comprehensive documentation on how to run the tests.
    - Justify your design choices and explain how your framework can accommodate future needs.
 
 5. **Commit and Push**:
+
    - Commit your changes with a meaningful message.
    - Push your branch to your GitHub repository.
 
@@ -48,12 +53,15 @@ We would like you to write end-to-end (E2E) tests for the SauceDemo application 
 Include the following in your documentation:
 
 1. **Installation**:
+
    - Steps to install Cypress and any other dependencies.
 
 2. **Running Tests**:
+
    - Commands to execute the test suite.
 
 3. **Framework Explanation**:
+
    - A brief overview of the design pattern used and its benefits.
 
 4. **Future-proofing**:

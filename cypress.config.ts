@@ -1,5 +1,5 @@
 const { defineConfig } = require("cypress");
-require('dotenv').config();
+require("dotenv").config();
 
 export default defineConfig({
   chromeWebSecurity: false,
@@ -9,23 +9,21 @@ export default defineConfig({
   e2e: {
     baseUrl: process.env.BASE_URL,
     setupNodeEvents(on, config) {
-      on('task', {
-        logTestData(logMessage){
+      on("task", {
+        logTestData(logMessage) {
           /*
             just a console log, but this is a demonstrative task an potentially
             can be an external logger lib or plugin
           */
           console.log(`Log task: "${logMessage}"`);
-          return null
+          return null;
         },
-
-      })
-      return config
+      });
+      return config;
     },
     env: {
       VALID_USER: process.env.VALID_USER,
-      PASSWORD: process.env.PASSWORD
+      PASSWORD: process.env.PASSWORD,
     },
-    
   },
 });
